@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Hillel home work</title>
+</head>
+<body>
+    <div class="modal-add-note-window">
+        <div class="modal-content">
+            <div class="modal-title-wrapper">
+                <span class="modal-title">Task text</span>
+                <span class="close">&times;</span>
+            </div>
+            <form class="modal-note-form" id="add-form">
+                <input type="text" class="modal-input" id="add-input" placeholder="enter note text">
+                <div class="modal-btns-inner">
+                    <button class="modal-btn-cansel" type="reset">Cancel</button>
+                    <button class="modal-btn-add" type="submit">Add note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-edit-note-window">
+        <div class="modal-content">
+            <div class="modal-title-wrapper">
+                <span class="modal-title">Edit text</span>
+                <span class="close edit-close">&times;</span>
+            </div>
+            <form class="modal-note-form" id="edit-form">
+                <input type="text" class="modal-input" id="edit-input">
+                <div class="modal-btns-inner">
+                    <button class="modal-btn-cansel" id="edit-btn-cansel" type="reset">Cancel</button>
+                    <button class="modal-btn-add" id="edit-note-btn" type="submit">Add note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-login-window">
+        <div class="modal-content login-modal">
+            <div class="modal-title-wrapper login-title-wrapper">
+                <span class="modal-title ">Sing in</span>
+                <span class="close login-close">&times;</span>
+            </div>
+            <form class="login-form" id="login-form">
+                <label for="name" class="label">Enter your name</label><br>
+                <input type="text" name="name" class="login-input" value="AlexZV25" required>
+                <label for="name" class="label">Enter your email</label><br>
+                <input type="email" name="email" class="login-input" value="example123000@gmail.com" required>
+                <div class="login-btns-inner">
+                    <button class="modal-btn-cansel" id="login-btn-cancel">Cancel</button>
+                    <button type="submit" class="login" id="login">Login</button>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="top-btns">
+                <button class="open-modal-btn"><img src="images/icons/add-modal-btn.svg" alt=""></button>
+                <button class="login-btn"><span class="login-text">Log in</span></button>
+            </div>
+            <div class="form-wrapper">
+                <form class="note-form">
+                    <div class="note-input-wrapper">
+                        <div class="note-input-inner">
+                            <input type="text" placeholder="enter new note" class="note-input">
+                            <button type="submit" class="note-input-btn"><img src="images/icons/note_Input_btn.svg"
+                                    alt=""></button>
+                        </div>
+                        <select class="note-select" name="select">
+                            <option value="all">All</option>
+                            <option value="done">Done</option>
+                            <option value="not-done">Not done</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="title-wrapper">
+                <span class="note-title">Notes</span>
+                <span class="note-state">State</span>
+            </div>
+            <ul class="note-list"></ul>
+        </div>
+        <button class="clear">Clear all</button>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <button class="open-modal-btn"><img src="images/icons/add-modal-btn.svg" alt=""></button>
+                <span class="footer-inf">Ⓒ 2023 To-do List</span>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
